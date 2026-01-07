@@ -8,9 +8,9 @@ public class ComandaDTO
     
     public string NomClient { get; set; }
     
-    public string EstatComanda { get; set; }
+    public string? EstatComanda { get; set; }
     
-    public string TipusPagament { get; set; }
+    public string? TipusPagament { get; set; }
     
     public DateTime DataComanda { get; set; }
     
@@ -19,6 +19,11 @@ public class ComandaDTO
     public double PreuComanda { get; set; }
     
     public int IDTaula { get; set; }
+    
+    public char? Pagat { get; set; }
+    
+    public string? nomTaula { get; set; }
+
     
 
 }

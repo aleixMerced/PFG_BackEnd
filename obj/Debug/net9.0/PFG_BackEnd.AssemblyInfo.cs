@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PFG_BackEnd")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+17a345d0744aa96b3cfe7ae88329b3b43480bede")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c368e4f0340d76b0221c85b3e80dfd988389353f")]
 [assembly: System.Reflection.AssemblyProductAttribute("PFG_BackEnd")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PFG_BackEnd")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

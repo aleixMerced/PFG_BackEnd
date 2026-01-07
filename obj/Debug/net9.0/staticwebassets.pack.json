@@ -1,0 +1,129 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\mgale\\Documents\\UNI\\QUART\\PFG\\PFG_BackEnd\\PFG_BackEnd\\wwwroot\\uploads\\img\\TipusProducte\\2e9b3ffe-fc61-400e-8495-bcb2b1a47c77.png",
+      "PackagePath": "staticwebassets\\uploads\\img\\TipusProducte\\2e9b3ffe-fc61-400e-8495-bcb2b1a47c77.png"
+    },
+    {
+      "Id": "C:\\Users\\mgale\\Documents\\UNI\\QUART\\PFG\\PFG_BackEnd\\PFG_BackEnd\\wwwroot\\uploads\\img\\TipusProducte\\6f6cab6c-2a58-4e91-8ed4-8df7ee0bc9bb.png",
+      "PackagePath": "staticwebassets\\uploads\\img\\TipusProducte\\6f6cab6c-2a58-4e91-8ed4-8df7ee0bc9bb.png"
+    },
+    {
+      "Id": "C:\\Users\\mgale\\Documents\\UNI\\QUART\\PFG\\PFG_BackEnd\\PFG_BackEnd\\wwwroot\\uploads\\img\\TipusProducte\\975fe1d6-9f23-4d57-b9a8-20299981e417.png",
+      "PackagePath": "staticwebassets\\uploads\\img\\TipusProducte\\975fe1d6-9f23-4d57-b9a8-20299981e417.png"
+    },
+    {
+      "Id": "C:\\Users\\mgale\\Documents\\UNI\\QUART\\PFG\\PFG_BackEnd\\PFG_BackEnd\\wwwroot\\uploads\\img\\TipusProducte\\Cafe.png",
+      "PackagePath": "staticwebassets\\uploads\\img\\TipusProducte\\Cafe.png"
+    },
+    {
+      "Id": "C:\\Users\\mgale\\Documents\\UNI\\QUART\\PFG\\PFG_BackEnd\\PFG_BackEnd\\wwwroot\\uploads\\img\\TipusProducte\\Cerveses especials.png",
+      "PackagePath": "staticwebassets\\uploads\\img\\TipusProducte\\Cerveses especials.png"
+    },
+    {
+      "Id": "C:\\Users\\mgale\\Documents\\UNI\\QUART\\PFG\\PFG_BackEnd\\PFG_BackEnd\\wwwroot\\uploads\\img\\TipusProducte\\Cerveses.png",
+      "PackagePath": "staticwebassets\\uploads\\img\\TipusProducte\\Cerveses.png"
+    },
+    {
+      "Id": "C:\\Users\\mgale\\Documents\\UNI\\QUART\\PFG\\PFG_BackEnd\\PFG_BackEnd\\wwwroot\\uploads\\img\\TipusProducte\\Combinats.png",
+      "PackagePath": "staticwebassets\\uploads\\img\\TipusProducte\\Combinats.png"
+    },
+    {
+      "Id": "C:\\Users\\mgale\\Documents\\UNI\\QUART\\PFG\\PFG_BackEnd\\PFG_BackEnd\\wwwroot\\uploads\\img\\TipusProducte\\Entrepans.png",
+      "PackagePath": "staticwebassets\\uploads\\img\\TipusProducte\\Entrepans.png"
+    },
+    {
+      "Id": "C:\\Users\\mgale\\Documents\\UNI\\QUART\\PFG\\PFG_BackEnd\\PFG_BackEnd\\wwwroot\\uploads\\img\\TipusProducte\\Gelats.png",
+      "PackagePath": "staticwebassets\\uploads\\img\\TipusProducte\\Gelats.png"
+    },
+    {
+      "Id": "C:\\Users\\mgale\\Documents\\UNI\\QUART\\PFG\\PFG_BackEnd\\PFG_BackEnd\\wwwroot\\uploads\\img\\TipusProducte\\Licors.png",
+      "PackagePath": "staticwebassets\\uploads\\img\\TipusProducte\\Licors.png"
+    },
+    {
+      "Id": "C:\\Users\\mgale\\Documents\\UNI\\QUART\\PFG\\PFG_BackEnd\\PFG_BackEnd\\wwwroot\\uploads\\img\\TipusProducte\\Llaunes.png",
+      "PackagePath": "staticwebassets\\uploads\\img\\TipusProducte\\Llaunes.png"
+    },
+    {
+      "Id": "C:\\Users\\mgale\\Documents\\UNI\\QUART\\PFG\\PFG_BackEnd\\PFG_BackEnd\\wwwroot\\uploads\\img\\TipusProducte\\Menu.png",
+      "PackagePath": "staticwebassets\\uploads\\img\\TipusProducte\\Menu.png"
+    },
+    {
+      "Id": "C:\\Users\\mgale\\Documents\\UNI\\QUART\\PFG\\PFG_BackEnd\\PFG_BackEnd\\wwwroot\\uploads\\img\\TipusProducte\\Ofertes especials.png",
+      "PackagePath": "staticwebassets\\uploads\\img\\TipusProducte\\Ofertes especials.png"
+    },
+    {
+      "Id": "C:\\Users\\mgale\\Documents\\UNI\\QUART\\PFG\\PFG_BackEnd\\PFG_BackEnd\\wwwroot\\uploads\\img\\TipusProducte\\Plats combinats.png",
+      "PackagePath": "staticwebassets\\uploads\\img\\TipusProducte\\Plats combinats.png"
+    },
+    {
+      "Id": "C:\\Users\\mgale\\Documents\\UNI\\QUART\\PFG\\PFG_BackEnd\\PFG_BackEnd\\wwwroot\\uploads\\img\\TipusProducte\\Tapes.png",
+      "PackagePath": "staticwebassets\\uploads\\img\\TipusProducte\\Tapes.png"
+    },
+    {
+      "Id": "C:\\Users\\mgale\\Documents\\UNI\\QUART\\PFG\\PFG_BackEnd\\PFG_BackEnd\\wwwroot\\uploads\\img\\TipusProducte\\a58a5739-2454-4d48-8dd8-b6feb4254e4b.png",
+      "PackagePath": "staticwebassets\\uploads\\img\\TipusProducte\\a58a5739-2454-4d48-8dd8-b6feb4254e4b.png"
+    },
+    {
+      "Id": "C:\\Users\\mgale\\Documents\\UNI\\QUART\\PFG\\PFG_BackEnd\\PFG_BackEnd\\wwwroot\\uploads\\img\\TipusProducte\\c4eaa59d-52ff-46a8-bda0-35ee979721ab.png",
+      "PackagePath": "staticwebassets\\uploads\\img\\TipusProducte\\c4eaa59d-52ff-46a8-bda0-35ee979721ab.png"
+    },
+    {
+      "Id": "C:\\Users\\mgale\\Documents\\UNI\\QUART\\PFG\\PFG_BackEnd\\PFG_BackEnd\\wwwroot\\uploads\\img\\pene\\taula2.png",
+      "PackagePath": "staticwebassets\\uploads\\img\\pene\\taula2.png"
+    },
+    {
+      "Id": "C:\\Users\\mgale\\Documents\\UNI\\QUART\\PFG\\PFG_BackEnd\\PFG_BackEnd\\wwwroot\\uploads\\img\\pene\\taula4.png",
+      "PackagePath": "staticwebassets\\uploads\\img\\pene\\taula4.png"
+    },
+    {
+      "Id": "C:\\Users\\mgale\\Documents\\UNI\\QUART\\PFG\\PFG_BackEnd\\PFG_BackEnd\\wwwroot\\uploads\\img\\pene\\taula422.png",
+      "PackagePath": "staticwebassets\\uploads\\img\\pene\\taula422.png"
+    },
+    {
+      "Id": "C:\\Users\\mgale\\Documents\\UNI\\QUART\\PFG\\PFG_BackEnd\\PFG_BackEnd\\wwwroot\\uploads\\img\\pene\\taulaVermell2.png",
+      "PackagePath": "staticwebassets\\uploads\\img\\pene\\taulaVermell2.png"
+    },
+    {
+      "Id": "C:\\Users\\mgale\\Documents\\UNI\\QUART\\PFG\\PFG_BackEnd\\PFG_BackEnd\\wwwroot\\uploads\\img\\pene\\taulaVermell4.png",
+      "PackagePath": "staticwebassets\\uploads\\img\\pene\\taulaVermell4.png"
+    },
+    {
+      "Id": "C:\\Users\\mgale\\Documents\\UNI\\QUART\\PFG\\PFG_BackEnd\\PFG_BackEnd\\wwwroot\\uploads\\img\\taula2.png",
+      "PackagePath": "staticwebassets\\uploads\\img\\taula2.png"
+    },
+    {
+      "Id": "C:\\Users\\mgale\\Documents\\UNI\\QUART\\PFG\\PFG_BackEnd\\PFG_BackEnd\\wwwroot\\uploads\\img\\taula4.png",
+      "PackagePath": "staticwebassets\\uploads\\img\\taula4.png"
+    },
+    {
+      "Id": "C:\\Users\\mgale\\Documents\\UNI\\QUART\\PFG\\PFG_BackEnd\\PFG_BackEnd\\wwwroot\\uploads\\img\\taulaVermell2.png",
+      "PackagePath": "staticwebassets\\uploads\\img\\taulaVermell2.png"
+    },
+    {
+      "Id": "C:\\Users\\mgale\\Documents\\UNI\\QUART\\PFG\\PFG_BackEnd\\PFG_BackEnd\\wwwroot\\uploads\\img\\taulaVermell4.png",
+      "PackagePath": "staticwebassets\\uploads\\img\\taulaVermell4.png"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.PFG_BackEnd.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.PFG_BackEnd.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.PFG_BackEnd.props",
+      "PackagePath": "build\\PFG_BackEnd.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.PFG_BackEnd.props",
+      "PackagePath": "buildMultiTargeting\\PFG_BackEnd.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.PFG_BackEnd.props",
+      "PackagePath": "buildTransitive\\PFG_BackEnd.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

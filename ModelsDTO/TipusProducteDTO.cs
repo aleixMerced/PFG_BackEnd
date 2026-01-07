@@ -5,4 +5,6 @@ public class TipusProducteDTO
     public int IdTipus { get; set; }
     
     public string NomTipus { get; set; }
+    
+    public string ImatgeTipus { get; set; }
 }

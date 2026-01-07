@@ -13,4 +13,7 @@ public class Tipusproducte
     
     [Required]
     public string NomTipus { get; set; }
+    
+    
+    public string? FotoTipus { get; set; }
 }

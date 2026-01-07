@@ -10,7 +10,6 @@ public class Comanda
     [Column("ID")] 
     public int IdComanda { get; set; }
     
-    [Required]
     public string NomClient {get; set;}
     
     public string? EstatComanda {get; set;}
@@ -26,7 +25,13 @@ public class Comanda
     [Column("IDTaula")]
     public int IDTaula { get; set; }
     
-    public ICollection<Comanda_Producte> Productes { get; set; } = new List<Comanda_Producte>();
+    public char?  Pagat { get; set; }
+
+    
+    public ICollection<Comanda_Linia> Productes { get; set; } = new List<Comanda_Linia>();
+    
+    public ICollection<Comanda_Pagament> Pagaments { get; set; } = new List<Comanda_Pagament>();
+
 
     
 }

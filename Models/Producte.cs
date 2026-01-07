@@ -15,22 +15,22 @@ public class Producte
     public string NomProducte { get; set; }
     
     [Column("ID_TIPUS")]
-    public int IdTipus { get; set; }
+    public int? IdTipus { get; set; }
     
     [ForeignKey("IdTipus")]
-    public Tipusproducte Tipus { get; set; }
+    public Tipusproducte? Tipus { get; set; }
     
-    public string ImatgeProducte { get; set; }
+    public string? ImatgeProducte { get; set; }
     
-    public decimal PreuVenta { get; set; }
+    public decimal? PreuVenta { get; set; }
     
-    public int Estoc { get; set; }
+    public int? Estoc { get; set; }
     
-    public int MinimEstoc { get; set; }
+    public int? MinimEstoc { get; set; }
     
-    public decimal PreuCompra { get; set; }
+    public decimal? PreuCompra { get; set; }
     
-    public ICollection<Comanda_Producte> Comandes { get; set; } = new List<Comanda_Producte>();
+    public ICollection<Comanda_Linia> Comandes { get; set; } = new List<Comanda_Linia>();
 
     
     //public List<string> Alergies { get; set; } // mirar com ferho 

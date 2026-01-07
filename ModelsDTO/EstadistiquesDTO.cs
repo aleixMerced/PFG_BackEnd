@@ -2,22 +2,10 @@
 
 public class EstadistiquesDTO
 {
-
-    public decimal IdCaixa { get; set; }
-    
-    public string TipusCaixa { get; set; }
-    
-    public DateOnly DiaCaixa { get; set; }
-    
-    public decimal TotalCaixa { get; set; }
-    
-    public decimal? TotalMenus { get; set; }
-    
-    public decimal? TotalEntrepans { get; set; }
-    
-    public string? Observacions { get; set; }
-    
-    public string? Horari { get; set; }
-    
-    public DateOnly? DiaCaixaTancada { get; set; }
+    public decimal Total { get; set; }
+    public int ProductesTotals { get; set; }
+    public int MenusFets { get; set; }
+    public int? ProducteMesVenutId { get; set; }
+    public string? NomMesVenut { get; set; } 
+    public int? UnitatsMesVenut { get; set; }
 }

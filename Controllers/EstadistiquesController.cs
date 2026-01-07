@@ -18,32 +18,32 @@ public class EstadistiquesController : ControllerBase
         estadistiquesService = service;
     }
 
-    [HttpGet("GetEstadisticaByTipusDia")]
-    public async Task<IActionResult> GetEstadisticaByTipusDia([FromQuery] string tipus, [FromQuery] DateOnly date)
+    [HttpGet("getResumDiari")] 
+    public async Task<IActionResult> GetResumDiari([FromQuery] DateOnly diaResum)
     {
-        var estadistica = await estadistiquesService.GetEstadisticaByTipusDia(tipus, date);
-
+        var estadistica = await estadistiquesService.GetResumDiariAsync(diaResum);
         return Ok(estadistica);
     }
+    
+    [HttpGet("getResumSetmanal")]
+    public async Task<ActionResult<EstadistiquesDTO>> GetResumSetmanal([FromQuery] int any, [FromQuery] int setmana)
+    {
+        var estadistica = await estadistiquesService.GetResumSetmanalAsync(any, setmana);
+        return Ok(estadistica);
+    }
+    
+    [HttpGet("getResumMensual")]
+    public async Task<ActionResult<EstadistiquesDTO>> GetResumMensual([FromQuery] int any, [FromQuery] int mes)
+    {
+        var res = await estadistiquesService.GetResumMensualAsync(any, mes);
+        return Ok(res);
+    }
 
-    [HttpPost("AugmentarCaixa")]
-    public async Task<IActionResult> AugmentarCaixa(decimal id, decimal augment)
+    [HttpGet("getResumAnual")]
+    public async Task<ActionResult<EstadistiquesDTO>> GetResumAnual([FromQuery] int any)
     {
-        try
-        {
-            await estadistiquesService.IncrementarPreuAsync(id, augment);
-            return Ok();
-        }
-        catch (KeyNotFoundException)
-        {
-            return NotFound();
-        }
-        
+        var res = await estadistiquesService.GetResumAnualAsync(any);
+        return Ok(res);
     }
-    [HttpGet("GetAllTipusDates")]
-    public async Task<ActionResult<IEnumerable<EstadistiquesDTO>>> GetAllTipusDates()
-    {
-        var result = await estadistiquesService.GetAllTipusDatesAsync();
-        return Ok(result);
-    }
+
 }

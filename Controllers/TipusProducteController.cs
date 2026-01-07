@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using PFG_BackEnd.Models;
+using PFG_BackEnd.ModelsDTO;
 using PFG_BackEnd.Service;
 
 
@@ -21,6 +22,37 @@ namespace PFG_BackEnd.Controllers
         {
             var tipus = await tipusProducteService.GetAllAsync();
             return Ok(tipus);
+        }
+        
+        [HttpPost("PostTipusProducte")]
+        public async Task<IActionResult> PostTipusProducte([FromForm] TipusProducteNewDTO dto)
+        {
+            var producte = await tipusProducteService.CrearTipusProducteAsync(dto);
+
+            return Ok(producte);
+        }
+
+        [HttpGet("GetTipusById")]
+        public async Task<IActionResult> GetProducteById(int id)
+        {
+            var producte = await tipusProducteService.GetByIDAsync(id);
+
+            return Ok(producte);
+        }
+
+        [HttpDelete("DeleteTipusProducte")]
+        public async Task<IActionResult> BorrarTipusProducteById(int id)
+        {
+            var producte = await tipusProducteService.DeleteTipusByIDAsync(id);
+            return Ok(producte);
+        }
+        
+        [HttpPut("PutTipusProducte")]
+        public async Task<IActionResult> PutTipusProducte([FromForm] TipusProducteNewDTO dto)
+        {
+            var producte = await tipusProducteService.ActualitzarTipusProducteAsync(dto);
+
+            return Ok(producte);
         }
     }
 }
