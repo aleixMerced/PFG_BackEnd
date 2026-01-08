@@ -96,7 +96,6 @@ public class MenuService : ServiceCollection
 
         await AppDbContext.MenuPlats.AddRangeAsync(nous);
 
-        // 3) Guardar
         await AppDbContext.SaveChangesAsync();
     }
     

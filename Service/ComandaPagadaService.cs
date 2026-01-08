@@ -17,9 +17,9 @@ public class ComandaPagadaService : ServiceCollection
     
     public async Task<List<ProducteComandaDTO>> GetProducteComanda(int idComanda)
     {
-        var productes = await AppDbContext.ComandaLiniaPagada          // ① DbSet al context
+        var productes = await AppDbContext.ComandaLiniaPagada        
             .Where(clp => clp.IdComanda == idComanda)
-            .Include(clp => clp.Producte)                      // ②
+            .Include(clp => clp.Producte)                      
             .ThenInclude(p => p.Tipus)
             .Select(clp => new ProducteComandaDTO()
             {
@@ -34,7 +34,7 @@ public class ComandaPagadaService : ServiceCollection
                 Quantitat     = clp.Quantitat,
                 PreuMoment    = clp.PreuMoment
             })
-            .ToListAsync();                                    // ③ necessita el using EF Core
+            .ToListAsync();                                 
 
         return productes;
     }

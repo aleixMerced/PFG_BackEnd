@@ -62,7 +62,7 @@ public async Task<List<TaulaDTO>> GetTaulesActivesAsync()
             g => g.OrderBy(st => st.IdTaula).ToList()
         );
 
-    // 1️⃣ Taules pare actives (sense pare) -> NomMostrat = NumTaula
+    // Taules pare actives (sense pare) -> NomMostrat = NumTaula
     var taulesPareActives = taulesActives
         .Where(t => t.TaulaPare == null)
         .OrderBy(t => t.NumTaula)
@@ -86,7 +86,7 @@ public async Task<List<TaulaDTO>> GetTaulesActivesAsync()
         });
     }
 
-    // 2️⃣ Subtaules actives -> NomMostrat = NumTaula + ".index" (2.1, 2.2, ...)
+    // Subtaules actives -> NomMostrat = NumTaula + ".index" (2.1, 2.2, ...)
     foreach (var kv in subTaulesPerPare)
     {
         var subTaules = kv.Value; // ja estan ordenades per IdTaula
@@ -374,11 +374,10 @@ public async Task<List<TaulaDTO>> GetTaulesActivesAsync()
     if (taula == null)
         throw new KeyNotFoundException($"No s'ha trobat la taula amb id {dto.idTaula.Value}");
 
-    // Nova ubicació
     var novaInterExt = dto.Ubicacio?.ToUpperInvariant() == "INTERIOR" ? 'I' : 'E';
     var antigaInterExt = taula.INTERIOREXTERIOR;
 
-    // ✅ Si és exterior, NO pot tenir subtaules
+    // Si és exterior, NO pot tenir subtaules
     if (novaInterExt == 'E')
         dto.TeSubTaules = false;
 
@@ -388,16 +387,16 @@ public async Task<List<TaulaDTO>> GetTaulesActivesAsync()
     if (numNou <= 0 || numNou > 99)
         throw new ArgumentException("El número de taula ha d'estar entre 1 i 99.");
 
-    // ------- REORDENACIÓ NUMERACIÓ (per ubicació) -------
+    //  REORDENACIÓ NUMERACIÓ (per ubicació) -
     if (novaInterExt != antigaInterExt)
     {
-        // 1) Tanquem el forat a la ubicació antiga (només taules pare)
+        // Tanquem el forat a la ubicació antiga (només taules pare)
         await ReordenarDespresEliminarAsync(numAntic, antigaInterExt);
 
-        // 2) Fem espai a la ubicació nova (només taules pare)
+        //  Fem espai a la ubicació nova (només taules pare)
         await FerEspaiPerNumTaulaAsync(numNou, novaInterExt);
 
-        // 3) Apliquem ubicació i número nou
+        //  Apliquem ubicació i número nou
         taula.INTERIOREXTERIOR = novaInterExt;
         taula.NumTaula = numNou;
     }
@@ -411,10 +410,8 @@ public async Task<List<TaulaDTO>> GetTaulesActivesAsync()
         }
     }
 
-    // ------- ALTRES CAMPS -------
     taula.ACTIU = dto.Actiu;
 
-    // ------- SUBTAULES -------
     var subTaules = await AppDbContext.Taula
         .Where(t => t.TaulaPare == taula.IdTaula)
         .ToListAsync();
@@ -426,7 +423,6 @@ public async Task<List<TaulaDTO>> GetTaulesActivesAsync()
         st.INTERIOREXTERIOR = taula.INTERIOREXTERIOR;
     }
 
-    // Exterior -> eliminar subtaules sempre
     if (taula.INTERIOREXTERIOR == 'E')
     {
         if (subTaules.Count > 0)
@@ -434,7 +430,6 @@ public async Task<List<TaulaDTO>> GetTaulesActivesAsync()
     }
     else
     {
-        // Interior -> aplicar dto.TeSubTaules
         if (dto.TeSubTaules)
         {
             if (subTaules.Count < 2)
@@ -503,7 +498,6 @@ public async Task<List<TaulaDTO>> GetTaulesActivesAsync()
             TaulaPare = taulaPare.IdTaula,
             IMATGE = "/uploads/img/taula2.png",
             ACTIU = 0,
-            // NOMTAULA = nom.Trim()
         };
 
         AppDbContext.Taula.Add(subtaula);

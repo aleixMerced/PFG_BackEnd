@@ -175,7 +175,7 @@ public class ComandaService : ServiceCollection
             });
 
         var agrupat = liniesNoPagades
-            .Concat(liniesPagades)                 // UNION ALL
+            .Concat(liniesPagades)            
             .GroupBy(x => x.IdProducte)
             .Select(g => new
             {
